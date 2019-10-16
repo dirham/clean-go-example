@@ -35,7 +35,7 @@ func NewCleanHTTPHandler(version string, e *gin.Engine, nu clean.MgoUsecase) {
 	v.GET("/clean/:id", handler.FindByID)
 }
 
-// FetchAll http://{host}/api/{version}/clean/{id}
+// FindByID http://{host}/api/{version}/clean/{id}
 func (n *CleanHTTPHandler) FindByID(c *gin.Context) {
 	id, erConv := strconv.Atoi(c.Params.ByName("id"))
 

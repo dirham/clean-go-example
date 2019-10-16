@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-	// mgo *mgo.Database, r *gin.Engine, keyfile string, viewid string
 	// do mongo connection or other driver here
 	var mgo *mgo.Database
 

@@ -9,7 +9,7 @@ import (
 	"github.com/globalsign/mgo"
 )
 
-// RunNews to connect main with news
+// RunClean to connect main with clean service
 func RunClean(mgo *mgo.Database, r *gin.Engine) {
 	// init clean repository
 	repoNews := clean.NewCleanRepository(mgo)
